@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#div1{min-height: 100px; max-width: 1000px; margin-left: 200px; background-color: lightyellow}
+		#div2{min-height: 100px; max-width: 1000px; margin-left: 200px; background-color: lightcyan}
+		#div3{min-height: 100px; max-width: 1000px; margin-left: 200px; background-color: lightskyblue}
+		#div4{min-height: 100px; max-width: 1000px; margin-left: 200px; background-color: lightgreen}
+		#div5{min-height: 100px; max-width: 1000px; margin-left: 200px; background-color: lightpink}
+		#div6{min-height: 100px; max-width: 1000px; margin-left: 200px; background-color: lightsalmon}
+		#div7{min-height: 100px; max-width: 1000px; margin-left: 200px; background-color: lightcoral}
+		img{height: 70px; margin-top: 40px; border: red solid 2px}
+	</style>
+	
+	<script>
+		
+		function move(){}
+		
+		function init(){
+			var div1 = document.createElement('div')
+			div1.id = 'div1'
+			document.body.appendChild(div1)
+			
+			var div2 = document.createElement('div')
+			div2.id = 'div2'
+			document.body.appendChild(div2)
+			
+			var div3 = document.createElement('div')
+			div3.id = 'div3'
+			document.body.appendChild(div3)
+			
+			var div4 = document.createElement('div')
+			div4.id = 'div4'
+			document.body.appendChild(div4)
+			
+			var div5 = document.createElement('div')
+			div5.id = 'div5'
+			document.body.appendChild(div5)
+			
+			var div6 = document.createElement('div')
+			div6.id = 'div6'
+			document.body.appendChild(div6)
+			
+			var div7 = document.createElement('div')
+			div7.id = 'div7'
+			document.body.appendChild(div7)
+			
+			document.body.style.border = 'darkblue solid 3px'
+			
+			var cat = document.createElement('img')
+			cat.src = 'images/kitty.jpg'
+			document.body.appendChild(cat)
+			
+			var bomb = document.createElement('img')
+			bomb.src = 'images/bomb.jpg'
+			document.body.appendChild(bomb)
+			
+			div3.appendChild(cat).alignmentBaseline
+			div1.appendChild(bomb)
+		}
+		onload=init
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
